@@ -11,14 +11,7 @@ if (isset($_POST["submit"])) {
         echo "<p>Sth is missing...</p>";
     }
 
-    // DB:
-    $connection = mysqli_connect("localhost", "root", "", "login_app");
-
-    // if ($connection) {
-    //     echo "connected";
-    // } else {
-    //     echo "dogshit";
-    // }
+    include("./sql/db.php");
 
     //send data into DB:
     $query = "INSERT INTO users(username, password)

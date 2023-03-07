@@ -15,9 +15,9 @@ if (isset($_POST["submit"])) {
     $connection = mysqli_connect("localhost", "root", "", "login_app");
 
     // if ($connection) {
-    //     echo "prepojene";
+    //     echo "connected";
     // } else {
-    //     echo "nahoubi";
+    //     echo "dogshit";
     // }
 
     //send data into DB:
